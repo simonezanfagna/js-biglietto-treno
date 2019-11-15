@@ -11,16 +11,16 @@ else if (distanza <= 0 || eta <= 0 ){
 else {
 
   if (eta < 18){
-    sconto_under_18 = ((costo_senza_sconto * 20) / 100);
-    tot_costo_under_18 = costo_senza_sconto - sconto_under_18;
+    var sconto_under_18 = ((costo_senza_sconto * 20) / 100);
+    var tot_costo_under_18 = costo_senza_sconto - sconto_under_18;
     document.getElementById("costo").innerHTML = tot_costo_under_18 + " " + "€";
     document.getElementById("percorso").innerHTML = distanza + " " + "km";
     document.getElementById("container").setAttribute("class", "visible");
   }
 
   else if (eta > 65){
-    sconto_over_65 = ((costo_senza_sconto * 40) / 100);
-    tot_costo_over_65 = costo_senza_sconto - sconto_over_65;
+    var sconto_over_65 = ((costo_senza_sconto * 40) / 100);
+    var tot_costo_over_65 = costo_senza_sconto - sconto_over_65;
     document.getElementById("costo").innerHTML = tot_costo_over_65 + " " + "€";
     document.getElementById("percorso").innerHTML = distanza + " " + "km";
     document.getElementById("container").setAttribute("class", "visible");
